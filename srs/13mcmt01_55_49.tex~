@@ -42,50 +42,58 @@
 			This project doesn’t use any communication protocols
 		\subsection{Software Product Features}
 			\begin{enumerate}
-				\item Provides the ability to add a vm
-				\\This is fired by user clicking {\bf Add VM } Button. A new window appears with fields for  
+				\item {\bf Provides the ability to add a vm} \\
+				\includegraphics{images/usecase}
+				\\This action is triggered by user clicking {\bf Add VM } Button. A new window appears with fields for  
 				\begin{itemize}
 				 \item Capacity of the VM
 				 \item The PM in which to add the VM into
 				\end{itemize}
 				
 				This would return \\\\
-				{\bf On Success: }
-				The GUI will be updated showing that new  VM that is added to existing PM
-				The residual capacity of the PM is calculated and update to reflect in GUI\\
-				{\bf On Failure: } \\
-				The user will get an error message that there is no enough space to add the given VM
-				
-				\item Provides the ability to delete a vm
-				\\This is fired by user clicking {\bf Delete VM } Button. A new window appears with fields for  
+				{\bf On Success: }\\
+				The GUI will be updated showing that new  VM that is added to existing PM.
+				The residual capacity of the PM is calculated and updated to reflect in GUI\\\\
+				{\bf On Failure: } \\\\
+				{\bf Reason: No enough residual capacity to accomodate a VM}\\
+				The user will get an error message that there is no enough space to add the given VM\\
+				{\bf Reason: User has chosen a PM that is switched off}\\
+				The user will get an error message that the selected PM is switched off
+				\item {\bf Provides the ability to delete a vm}\\
+				\includegraphics{images/delete}
+				\\This action is triggered by user clicking {\bf Delete VM } Button. A new window appears with fields for  
 				\begin{itemize}
-				 \item Choosing the PM in which the VM we want to shutdown resides
-				 \item The ID of the VM that we want to shutdown
+				 \item Choosing the PM in which the VM we want to delete resides
+				 \item The ID of the VM that we want to delete
 				\end{itemize}
 				
 				This would return \\\\
-				{\bf On Success: }
-				The GUI will be updated showing that new  VM that is deleted from the PM
-				The residual capacity of the PM is calculated and update to reflect in GUI\\
-				{\bf On Failure: } \\
+				{\bf On Success: }\\
+				The GUI will be updated showing that new  VM that is deleted from the PM.
+				The residual capacity of the PM is calculated and update to reflect in GUI\\\\
+				{\bf On Failure: } \\\\
+				{\bf Reason: The selected PM is empty or switched off}\\
 				The user will get an error message that the particular PM which you have selected is empty or 
 				switched off
 				
 				%\item Displays the details of which vm is in which pm
 				
 				
-				\item Ability to switch off a physical machine\\
-				\\This is fired by user clicking on the PM which he wants to shutdown. 
+				\item {\bf Ability to switch off a physical machine}\\
+				\includegraphics{images/shut}
+				\\This action is triggered by user clicking on the PM which he wants to shutdown. 
 								
 				This would result in \\\\
 				{\bf On Success: }\\
 				The software moves all the VM's into other PM's with sufficient residual capacity. Then the system is shutdown. 
 				The GUI will be updated showing that the PM selected is switched off
-				\\
+				\\\\
 				{\bf On Failure: } \\
+				{\bf Reason: VM's in the selected PM cannot be accomodated in other PM's}\\
 				The user will get a message stating that the VM's in the selected PM cannot be accomodated in other PM's.
-				\item Provides the ability to consolidate all VM's in minimum number of PM's
-				\\This action is fired by user clicking the {\bf consolidate} Button. 
+				\item {\bf Provides the ability to consolidate all VM's in minimum number of PM's}\\
+				\includegraphics{images/consolidate}
+ 				\\This action is fired by user clicking the {\bf consolidate} Button. 
 								
 				This would result in \\\\
 				{\bf On Success: }\\
@@ -96,9 +104,9 @@
 			\end{enumerate}
 			
 			
-			{\bf Use Case Add VM}
-			\\
-			\includegraphics{images/usecase}
+			
+			
+			
 			
 %	\section{SOFTWARE SYSTEM ATTRIBUTES}
 %
