@@ -27,6 +27,9 @@
 		\subsection{External Interface Requirements}
 			\subsubsection{User Interfaces}
 			The GUI displays 
+			\\
+			\\
+			\includegraphics[height=8cm]{images/gui}
 			\begin{itemize}
 				\item All the physical machines
 				\item Virtual Machines in each physical machine
