@@ -26,10 +26,11 @@
 		greedy bin packing algorithm for this purpose. \section{SPECIFIC REQUIREMENTS}
 		\subsection{External Interface Requirements}
 			\subsubsection{User Interfaces}
-			The GUI displays 
+			
+			\includegraphics[height=10cm]{images/gui}
 			\\
 			\\
-			\includegraphics[height=8cm]{images/gui}
+			The GUI displays 			
 			\begin{itemize}
 				\item All the physical machines
 				\item Virtual Machines in each physical machine
@@ -53,11 +54,11 @@
 				 \item The PM in which to add the VM into
 				\end{itemize}
 				
-				This would return \\\\
+				This would return \\
 				{\bf On Success: }\\
 				The GUI will be updated showing that new  VM that is added to existing PM.
 				The residual capacity of the PM is calculated and updated to reflect in GUI\\\\
-				{\bf On Failure: } \\\\
+				{\bf On Failure: } \\
 				{\bf Reason: No enough residual capacity to accomodate a VM}\\
 				The user will get an error message that there is no enough space to add the given VM\\
 				{\bf Reason: User has chosen a PM that is switched off}\\
@@ -70,11 +71,11 @@
 				 \item The ID of the VM that we want to delete
 				\end{itemize}
 				
-				This would return \\\\
+				This would return \\
 				{\bf On Success: }\\
 				The GUI will be updated showing that new  VM that is deleted from the PM.
 				The residual capacity of the PM is calculated and update to reflect in GUI\\\\
-				{\bf On Failure: } \\\\
+				{\bf On Failure: } \\
 				{\bf Reason: The selected PM is empty or switched off}\\
 				The user will get an error message that the particular PM which you have selected is empty or 
 				switched off
