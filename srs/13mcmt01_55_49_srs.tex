@@ -67,8 +67,9 @@
 				\includegraphics{images/delete}
 				\\This action is triggered by user clicking {\bf Delete VM } Button. A new window appears with fields for  
 				\begin{itemize}
-				 \item Choosing the PM in which the VM we want to delete resides
-				 \item The ID of the VM that we want to delete
+				 \item Choosing the PM in which the VM we want to delete resides. Then a drop down list will be
+				 updated with list of VM's in the chosen PM.
+				 \item The user has to select the  ID of the VM that we want to delete from the drop down list. Only VM's that are alive will be displayed in the list.
 				\end{itemize}
 				
 				This would return \\
@@ -95,6 +96,18 @@
 				{\bf On Failure: } \\
 				{\bf Reason: VM's in the selected PM cannot be accomodated in other PM's}\\
 				The user will get a message stating that the VM's in the selected PM cannot be accomodated in other PM's.
+				
+				\item {\bf Ability to switch on a physical machine}\\
+				\includegraphics{images/shut}
+				\\This action is triggered by user clicking on the PM which he wants to switch on. 
+				
+				This would result in \\\\
+				{\bf On Success: }\\
+				The PM will be switched on. The color of the PM is changed from red to green to reflect the on 
+				status of PM in GUI 
+				
+				
+				
 				\item {\bf Provides the ability to consolidate all VM's in minimum number of PM's}\\
 				\includegraphics{images/consolidate}
  				\\This action is fired by user clicking the {\bf consolidate} Button. 
