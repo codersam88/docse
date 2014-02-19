@@ -34,7 +34,7 @@ This module is responsible for creating physical machines(PM), adding virtual ma
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{images/intrfc.jpg}
+\includegraphics[height=7cm]{intrfc.jpg}
 \caption{Interfaces between modules}
 \label{fig:interfaces}
 
@@ -45,7 +45,7 @@ This module is responsible for creating physical machines(PM), adding virtual ma
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=11cm]{images/dfd.jpg}
+\includegraphics[height=11cm]{dfd.jpg}
 \caption{Data flow diagram}
 \label{fig:modules}
 
