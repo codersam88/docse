@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2014.2.12)  18 FEB 2014 23:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2014.2.12)  18 FEB 2014 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -197,7 +197,7 @@ Package pdftex.def Info: images/GUI.png used on input line 85.
 Here is how much of TeX's memory you used:
  1534 strings out of 493607
  21420 string characters out of 3149945
- 77576 words of memory out of 3500000
+ 76576 words of memory out of 3500000
  4843 multiletter control sequences out of 15000+200000
  9157 words of font info for 32 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
@@ -209,7 +209,7 @@ b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/
 fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.p
 fb>
-Output written on 13MCMT01_55_49_hld.pdf (7 pages, 298702 bytes).
+Output written on 13MCMT01_55_49_hld.pdf (7 pages, 298694 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
