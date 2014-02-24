@@ -27,24 +27,20 @@ This module provides standard interface for all modules to communicate with each
 \item \textbf{ User Interface }
 
 This module is the main interface to the user and is responsible for building, editing and updating the GUI.
-\item \textbf{ Parser }
-
-This module reads the input from file, parses it and initializes PM’s and VM’s as specified in it.
-\item \textbf{ PM modifier }
-
-This module is responsible for adding virtual machines(VM) and doing modifications to Physical Machines(PM)s. This is also responsible for consolidation operation.
-
-\end{enumerate}
-
 \begin{figure}[h]
 \centering
 \includegraphics[height=9cm]{images/intrfc.jpg} 
 \caption{Interfaces between modules}
 \label{fig:interfaces}
-
 \end{figure}
-
+\item \textbf{ Parser }
+This module reads the input from file, parses it and initializes PM’s and VM’s as specified in it.
 \pagebreak
+\item \textbf{ PM modifier }
+
+This module is responsible for adding virtual machines(VM) and doing modifications to Physical Machines(PM)s. This is also responsible for consolidation operation.
+
+\end{enumerate}
 \subsection{Data flow diagram}
 
 \begin{figure}[h]
@@ -54,9 +50,6 @@ This module is responsible for adding virtual machines(VM) and doing modificatio
 \label{fig:modules}
 
 \end{figure}
-
-
-
 
 \subsection{API Specification}
 \subsubsection{Modules of the architecture }
@@ -105,6 +98,7 @@ standard interface for all modules to communicate with each other.
  \item \textbf{Functionality}
  
  The main purpose of this module is to take input from the user and reflect the system state to the user.
+ \pagebreak
   \item \textbf{Interface Description}
   \end{itemize}
   \textbf{showPm(PM\textunderscore NO)} 
@@ -151,6 +145,7 @@ standard interface for all modules to communicate with each other.
   \textit{Called by} \> : PM modifier module
   
 \end{tabbing}
+\pagebreak
 \textbf{Parser}
 \begin{itemize}
 \item \textbf{Functionality}
@@ -192,12 +187,12 @@ The operations of this module includes adding VM's to PM, calculating the residu
   \textit{Called by} \> : Parser module through Main module \\
   \textit{Calls} \> : showVm of User Interface Module through Main module.\\
 \end{tabbing}
-
+\pagebreak
 \textbf{deleteVm(VM\textunderscore ID)}
   
 \begin{tabbing}
 \hspace*{4cm}\= \kill
- \textit{Purpose} \> : The purpose of this function is to delete a VM specified by the user.\\
+ \textit{Purpose} \> : The purpose of this function is to delete a VM \\ \>specified by the user.\\
   \textit{Input Parameters} \> : PM number in which VM resides and VM ID. \\
   \textit{Output Parameter} \> : none \\
  \textit{Called by} \> : User Interface module \\
