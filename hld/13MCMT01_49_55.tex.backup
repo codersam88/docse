@@ -19,28 +19,29 @@ The purpose of this document is to depict the high level
 design and the data flow diagram of bin packing
 vm consolidation algorithm project.
 \section{Modules in the system}
-Our system is divided into 4 modules. They are
+Our system is divided into 3 modules. They are
 \begin{enumerate}
-\item \textbf{ Main Module }
-
-This module provides standard interface for all modules to communicate with each other.
 \item \textbf{ User Interface }
 
 This module is the main interface to the user and is responsible for building, editing and updating the GUI.
-\begin{figure}[h]
-\centering
-\includegraphics[height=9cm]{images/intrfc.jpg} 
-\caption{Interfaces between modules}
-\label{fig:interfaces}
-\end{figure}
 \item \textbf{ Parser }
+
 This module reads the input from file, parses it and initializes PM’s and VM’s as specified in it.
-\pagebreak
 \item \textbf{ PM modifier }
 
 This module is responsible for adding virtual machines(VM) and doing modifications to Physical Machines(PM)s. This is also responsible for consolidation operation.
 
 \end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[height=9cm]{images/intrfc.jpg} 
+\caption{Interfaces between modules}
+\label{fig:interfaces}
+
+\end{figure}
+
+\pagebreak
 \subsection{Data flow diagram}
 
 \begin{figure}[h]
@@ -51,54 +52,16 @@ This module is responsible for adding virtual machines(VM) and doing modificatio
 
 \end{figure}
 
+
+
+
 \subsection{API Specification}
 \subsubsection{Modules of the architecture }
-\textbf{Main module}
-\begin{itemize}
-\item \textbf{Functionality}
-
-This module is the central interface between all others modules. All the communications between the modules must pass through this module. This provides a 
-standard interface for all modules to communicate with each other.
-
-\item \textbf{Interface Description}
-
-\textbf{callParser()}
-  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> : All the calls to Parser from other modules pass \\ \>through this function.\\
-  \textit{Input Parameter} \> : fuction to be called in parser module and required parameters. \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : all the fuctions in Parser module\\
-\end{tabbing}
-\textbf{callUI()}
-  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> : All the calls to User Interface module from other modules pass \\ \>through this function.\\
-  \textit{Input Parameter} \> : Fuction to be called in User Interface module and \\ \>required parameters. \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : PM modifier \\
-  \textit{Calls} \> : All the fuctions in Parser module\\
-\end{tabbing}
-\textbf{callPmModifier()}
-  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> : All the calls to PM Modifier module from other modules pass \\ \>through this function.\\
-  \textit{Input Parameter} \> : Fuction to be called in PM modifier module and \\ \>required parameters. \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : Parser moduler and User Interface module \\
-  \textit{Calls} \> : All the fuctions in PM Modifier module through Main module\\
-\end{tabbing}
-\end{itemize}
 \textbf{User Interface Module}
 \begin{itemize}
  \item \textbf{Functionality}
  
  The main purpose of this module is to take input from the user and reflect the system state to the user.
- \pagebreak
   \item \textbf{Interface Description}
   \end{itemize}
   \textbf{showPm(PM\textunderscore NO)} 
@@ -112,12 +75,8 @@ standard interface for all modules to communicate with each other.
  \textit{Purpose} \> : This function takes the input from the PM modifier and \\ \>creates a UI element for PM and displays it.\\
   \textit{Input Parameter} \> : PM number \\
   \textit{Output Parameter} \> : none \\
-<<<<<<< HEAD
-  \textit{Called by} \> : PM modifier module through Main module
-=======
   \textit{Calls} \> : status() function of PM modifier. \\
   \textit{Called by} \> : User Interface module
->>>>>>> ncgui1
   
 \end{tabbing}
 %\begin{figure}[h]
@@ -138,24 +97,10 @@ standard interface for all modules to communicate with each other.
  \textit{Purpose} \> :This function takes the input from the PM modifier \\ \>creates a UI element for VM and displays it in corresponding PM.\\
   \textit{Input Parameter} \> : VM ID \\
   \textit{Output Parameter} \> : none \\
-<<<<<<< HEAD
-  \textit{Called by} \> : PM modifier module through Main module
-  
-\end{tabbing}
-\textbf{updateGui()}  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> :The purpose of this function is to update the GUI after\\ \> a modification has been done to a PM like adding a VM \\ \>or deleting a VM.\\
-  \textit{Input Parameter} \> : none \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : PM modifier module
-=======
   \textit{Calls} \> : status() function of PM modifier. \\
   \textit{Called by} \> : User Interface module
->>>>>>> ncgui1
   
 \end{tabbing}
-\pagebreak
 \textbf{Parser}
 \begin{itemize}
 \item \textbf{Functionality}
@@ -173,7 +118,7 @@ It then initializes the PM's and adds VM's to them by the help of PM modifier mo
   \textit{Input Parameter} \> : file path specified by the user \\
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : If the file is not in the specified format it would display \\ \>\textbf{wrong file format} message \\
-  \textit{Called by} \> : User Interface module through Main module \\
+  \textit{Called by} \> : User Interface module \\
   \textit{Calls} \> : createPM and addVM functions of PM modifier\\
 \end{tabbing}
 \end{itemize}
@@ -194,20 +139,15 @@ The operations of this module includes adding VM's to PM, calculating the residu
   \textit{Input Parameters} \> : VM ID and VM capacity. \\
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : If there is no enough space to add VM to a PM it outputs \\ \>\textbf{No enough space} message\\
-<<<<<<< HEAD
-  \textit{Called by} \> : Parser module through Main module \\
-  \textit{Calls} \> : showVm of User Interface Module through Main module.\\
-=======
   \textit{Called by} \> : Parser module \\
-  \textit{Calls} \> : none.\\
->>>>>>> ncgui1
+  \textit{Calls} \> : showVm of User Interface Module.\\
 \end{tabbing}
-\pagebreak
+
 \textbf{deleteVm(VM\textunderscore ID)}
   
 \begin{tabbing}
 \hspace*{4cm}\= \kill
- \textit{Purpose} \> : The purpose of this function is to delete a VM \\ \>specified by the user.\\
+ \textit{Purpose} \> : The purpose of this function is to delete a VM specified by the user.\\
   \textit{Input Parameters} \> : PM number in which VM resides and VM ID. \\
   \textit{Output Parameter} \> : none \\
  \textit{Called by} \> : User Interface module \\
@@ -222,13 +162,8 @@ The operations of this module includes adding VM's to PM, calculating the residu
   \textit{Input Parameters} \> : PM number. \\
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : Displays \textbf{It is not possible to switch off this PM at this time} if \\ \>switching off was not successful. \\
-<<<<<<< HEAD
-  \textit{Called by} \> : User Interface module through Main module \\
-  \textit{Calls} \> : updateGui() through Main module.\\
-=======
   \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : none.\\
->>>>>>> ncgui1
+  \textit{Calls} \> : updateGui().\\
 \end{tabbing}
 \textbf{switchOnPm(PM\textunderscore NO)}
 \begin{tabbing}
@@ -237,13 +172,8 @@ The operations of this module includes adding VM's to PM, calculating the residu
 \textit{Input Parameters}\>: PM number.\\
 \textit{Output Parameters}\>: none\\
 \textit{Return Value}\>:\\
-<<<<<<< HEAD
-\textit{Called by}\>: User Interface module through Main module\\
-\textit{Calls}\>: updateGui() through Main module.\\
-=======
 \textit{Called by}\>: User Interface module\\
-\textit{Calls}\>: none.\\
->>>>>>> ncgui1
+\textit{Calls}\>: updateGui().\\
 \end{tabbing}
 
 \textbf{consolidate( )}
@@ -251,16 +181,6 @@ The operations of this module includes adding VM's to PM, calculating the residu
 \begin{tabbing}
 \hspace*{4cm}\= \kill
  \textit{Purpose} \> : The purpose of this function is to run Bin packing algorithm and \\ \> consolidate all the VM's into minimum number of PM's.\\
-  \textit{Input Parameters} \> : none \\
-  \textit{Output Parameter} \> : none \\
-    \textit{Called by} \> : User Interface module through Main module \\
-  \textit{Calls} \> : none.\\
-\end{tabbing}
-\textbf{status( )}
-  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> : The purpose of this function is to inform the User Interface\\ \> module the current staus of all the PMs all the VMs in it.\\
   \textit{Input Parameters} \> : none \\
   \textit{Output Parameter} \> : none \\
     \textit{Called by} \> : User Interface module \\
