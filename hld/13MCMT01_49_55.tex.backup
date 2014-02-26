@@ -140,7 +140,7 @@ The operations of this module includes adding VM's to PM, calculating the residu
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : If there is no enough space to add VM to a PM it outputs \\ \>\textbf{No enough space} message\\
   \textit{Called by} \> : Parser module \\
-  \textit{Calls} \> : none.\\
+  \textit{Calls} \> : showVm of User Interface Module.\\
 \end{tabbing}
 
 \textbf{deleteVm(VM\textunderscore ID)}
@@ -163,7 +163,7 @@ The operations of this module includes adding VM's to PM, calculating the residu
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : Displays \textbf{It is not possible to switch off this PM at this time} if \\ \>switching off was not successful. \\
   \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : none.\\
+  \textit{Calls} \> : updateGui().\\
 \end{tabbing}
 \textbf{switchOnPm(PM\textunderscore NO)}
 \begin{tabbing}
@@ -173,7 +173,7 @@ The operations of this module includes adding VM's to PM, calculating the residu
 \textit{Output Parameters}\>: none\\
 \textit{Return Value}\>:\\
 \textit{Called by}\>: User Interface module\\
-\textit{Calls}\>: none.\\
+\textit{Calls}\>: updateGui().\\
 \end{tabbing}
 
 \textbf{consolidate( )}
@@ -181,16 +181,6 @@ The operations of this module includes adding VM's to PM, calculating the residu
 \begin{tabbing}
 \hspace*{4cm}\= \kill
  \textit{Purpose} \> : The purpose of this function is to run Bin packing algorithm and \\ \> consolidate all the VM's into minimum number of PM's.\\
-  \textit{Input Parameters} \> : none \\
-  \textit{Output Parameter} \> : none \\
-    \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : none.\\
-\end{tabbing}
-\textbf{status( )}
-  
-\begin{tabbing}
-\hspace*{4cm}\= \kill
- \textit{Purpose} \> : The purpose of this function is to inform the User Interface\\ \> module the current staus of all the PMs all the VMs in it.\\
   \textit{Input Parameters} \> : none \\
   \textit{Output Parameter} \> : none \\
     \textit{Called by} \> : User Interface module \\
