@@ -27,25 +27,38 @@ This module will be called by Parser module and User Interface module for
 \subsubsection{Interface Data Structures}
 \begin{enumerate}
  \item PMstruct
- \item VMstruct
-\end{enumerate}
+ \end{enumerate}
 \textbf{PMstruct}
+\\
 
 Different fields in PMstruct data structure are 
 \begin{enumerate}
- \item PM\textunderscore id - final String
+ \item PM\textunderscore ID - final String
  \item res\textunderscore cap - integer
- \item VM\textunderscore list - class VMstruct
+ \item VM\textunderscore list - array of type class VMstruct
 \end{enumerate}
 
 This is the data structure returned to status() function which is called by User Interface
+\\
 \subsubsection{Internal Data Structures}
-NONE
-\subsubsection{Interface Functions}
-\linebreak 
-\textbf{ void deleteVM(VM\textunderscore ID)}
+\begin{enumerate}
+ \item VMstruct
+\end{enumerate}
+\textbf{VMstruct}
+\\
 
+Different fields in VMstruct data structure are 
+\begin{enumerate}
+ \item VM\textunderscore ID - final String
+ \item cap - integer
+\end{enumerate}
+This is the structure used by PM modifier to create a VM.
+\subsubsection{Interface Functions}
+\textbf{ void deleteVM(VM\textunderscore ID)}
+\\
 \textbf{Description :} The purpose of this function is to delete the VM which is passed as an input parameter to while calling this function.
+\textbf{Input parameters :} The VM\textunderscore ID of VM which has to be deleted.
+\textbf{Output parameters :} NONE.
 \begin{enumerate}
 \item \textbf{ User Interface }
 
@@ -87,24 +100,7 @@ This module is responsible for adding virtual machines(VM) and doing modificatio
  
  The main purpose of this module is to take input from the user and reflect the system state to the user.
  \end{itemize}
-%\begin{tabbing}
-%\hspace*{2cm}\=\hspace*{3cm}\= \kill
-%column1a \> column2a \> column3a \\
-%column1b \> column2b \> column3b
-%\end{tabbing}
-%\begin{figure}[h]
-%\centering
-%\includegraphics[height=7cm]{images/init.png}
-%\caption{Initial User Interface}
-%\label{fig:GUIinit}
-%\end{figure}
-%\begin{figure}[h]
-%\centering
-%\includegraphics[height=7cm]{images/GUI.png}
-%\caption{Main user interface}
-%\label{fig:GUI}
-%\end{figure}
-%\textbf{Parser}
+
 \begin{itemize}
 \item \textbf{Functionality}
 
