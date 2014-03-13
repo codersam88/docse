@@ -1,0 +1,20 @@
+\documentclass[12pt,a4paper] {article}
+\title {Insertion Sort}
+\usepackage{algorithmic}
+
+\begin{document}
+ 
+\maketitle
+
+\begin{algorithmic}
+\STATE \textbf{function} quicksort(\emph{array})
+\IF {length(\emph{array}) $\leq 1$}
+\STATE return array 
+\ENDIF
+\STATE select and remove a pivot element \emph{pivot} from 'array'
+\STATE create empty lists \emph{less} and \emph{greater}
+\FOR \textbf{each} \emph{x} \textbf{in} \emph{array}
+\IF \emph{x} $\leq 1$ \emph{pivot}
+\ENDFOR
+\end{algorithmic}
+\end{document}

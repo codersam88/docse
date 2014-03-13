@@ -1,0 +1,6 @@
+\documentclass[12pt,a4paper] {article}
+\usepackage{awesome}
+\begin{document}
+ \wbal
+ \boldit{check this}
+\end{document}
