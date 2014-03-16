@@ -36,6 +36,7 @@ Different fields in PMstruct data structure are
  \item PM\textunderscore ID - final String
  \item res\textunderscore cap - integer
  \item VM\textunderscore list - array of type class VMstruct
+ \item onSate - integer
 \end{enumerate}
 
 This is the data structure returned to status() function which is called by User Interface
@@ -98,7 +99,8 @@ it returns an error.
 \end{algorithmic}
 \textbf{ void consolidate()}
 \\
-\textbf{Description :} The function runs the consolidation algorithm to consolidate VM's in PM's and swithces off the PM's if any of the PM's become empty after consolidation.
+\textbf{Description :} The function runs the consolidation algorithm to consolidate VM's in PM's and swithces 
+off the PM's if any of the PM's become empty after consolidation.
 \\
 \textbf{Input parameters :} NONE.
 \\
@@ -108,12 +110,29 @@ it returns an error.
 \\
 \textbf{Pseudocode :}
 \begin{algorithmic}[1]
-\STATE void consolidate(\emph{cap)}
-\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
-\IF {\emph{res\textunderscore cap} $\leq 1$ \emph{cap}}
-\STATE add VM to this PM
+\STATE void consolidate()
+\STATE quicksort(\emph{PMarray,lo,hi}) \COMMENT{sorts PMs in decreasing order of their residual capacity}
+\STATE void quicksort(\emph{PMarray,lo,hi})
+\IF {\emph{lo} $ < $ \emph{hi}}
+\STATE p = pivot(\emph{PMarray,lo,hi})
+\STATE left, right = partition(\emph{PMarray, p, lo, hi})
+\STATE quicksort(\emph{PMarray, lo, left})
+\STATE quicksort(\emph{PMarray, right, hi})
 \ENDIF
+\end{algorithmic}
+\begin{algorithmic}[1]
+\STATE int partition(\emph{PMarray, left, right, pivotIndex})
+\STATE pivotValue = PMarray[pivotIndex]
+\STATE swap PMarray[pivotIndex] and PMarray[right]
+\STATE storeIndex = left
+\FOR {\emph{i} from \emph{left} to \emph{right - 1}}
+\IF {\emph{PMarray[i]} $\leq 1$ \emph{pivotValue}}
+\STATE swap \emph{PMarray[i]} and \emph{PMarray[storeIndex]}
+\STATE \emph{storeIndex} = \emph{storeIndex} + 1
+\ENDIF
+\STATE swap \emph{PMarray[storeIndex]} and \emph{PMarray[right]}
 \ENDFOR
+\RETURN \emph{storeIndex}
 \end{algorithmic}
 \textbf{ void switchOffPM(PM\textunderscore ID)}
 \\
@@ -123,14 +142,33 @@ it returns an error.
 \\
 \textbf{Output parameters :} NONE.
 \\
-\textbf{Return Values :} Returns error 
+\textbf{Return Values :} Returns error if the VM's in the current PM can't be consolidated in to other PM's.
 \\
 \textbf{Pseudocode :}
 \begin{algorithmic}[1]
-\STATE void consolidate(\emph{cap)}
+\STATE void switchOffPM(\emph{PM\textunderscore ID})
 \FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
-\IF {\emph{res\textunderscore cap} $\leq 1$ \emph{cap}}
-\STATE add VM to this PM
+\IF {\emph{PM\textunderscore ID} matches}
+\STATE change onState to OFF
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\textbf{ void switchOnPM(PM\textunderscore ID)}
+\\
+\textbf{Description :} This function switches on the specified PM.
+\\
+\textbf{Input parameters :} PM ID of the PM which has to be switched on.
+\\
+\textbf{Output parameters :} NONE.
+\\
+\textbf{Return Values :} No possible error condition.
+\\
+\textbf{Pseudocode :}
+\begin{algorithmic}[1]
+\STATE void switchOnPM(\emph{PM\textunderscore ID})
+\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
+\IF {\emph{PM\textunderscore ID} matches}
+\STATE change onState to ON
 \ENDIF
 \ENDFOR
 \end{algorithmic}
