@@ -55,7 +55,7 @@ Different fields in VMstruct data structure are
 \end{enumerate}
 This is the structure used by PM modifier to create a VM.
 \subsubsection{Interface Functions}
-\textbf{ void deleteVM(VM\textunderscore ID)}
+\textbf{void deleteVM(VM\textunderscore ID)}
 \\
 \textbf{Description :} The purpose of this function is to delete the VM which is passed as an input parameter to while calling this function.
 \\
@@ -76,6 +76,7 @@ This is the structure used by PM modifier to create a VM.
 \ENDFOR
 \ENDFOR
 \end{algorithmic}
+\mbox{}\\\\
 \textbf{ void addVM(cap)}
 \\
 \textbf{Description :} This function checks the PM's if there is enough capacity available and if available adds the VM to it. If there is no enough capacity 
@@ -97,6 +98,7 @@ it returns an error.
 \ENDIF
 \ENDFOR
 \end{algorithmic}
+\mbox{}\\\\
 \textbf{ void consolidate()}
 \\
 \textbf{Description :} The function runs the consolidation algorithm to consolidate VM's in PM's and swithces 
@@ -112,7 +114,21 @@ off the PM's if any of the PM's become empty after consolidation.
 \begin{algorithmic}[1]
 \STATE void consolidate()
 \STATE quicksort(\emph{PMarray,lo,hi}) \COMMENT{sorts PMs in decreasing order of their residual capacity}
-\STATE void quicksort(\emph{PMarray,lo,hi})
+\FOR {\emph{i} from \emph{0} to \emph{PMarray.lenght-1}}
+\STATE quicksort(\emph{PMarray[i].VMarray, lo, hi}) \COMMENT{sorts VMs in decreasing order of their capacity}
+\FOR {\textbf{each} \emph{VMstruct} \textbf{in} \emph{VMarray}}
+\FOR {\emph{i} from \emph{PMarray.lenght-1} to \emph{0}}
+\IF {\emph{PMarray[i].PMstruct.res\textunderscore cap} $ \geq $\emph{VMarray.VMstruct.cap}}
+\STATE move VMstruct into this PMstruct's VMarray
+\ENDIF
+\ENDFOR
+\ENDFOR
+\ENDFOR
+\end{algorithmic}
+\mbox{}\\\\
+Method used to sort PM's and VM's.
+\begin{algorithmic}[1]
+\STATE void \textbf{quicksort}(\emph{PMarray,lo,hi})
 \IF {\emph{lo} $ < $ \emph{hi}}
 \STATE p = pivot(\emph{PMarray,lo,hi})
 \STATE left, right = partition(\emph{PMarray, p, lo, hi})
@@ -120,8 +136,9 @@ off the PM's if any of the PM's become empty after consolidation.
 \STATE quicksort(\emph{PMarray, right, hi})
 \ENDIF
 \end{algorithmic}
+\mbox{}\\\\
 \begin{algorithmic}[1]
-\STATE int partition(\emph{PMarray, left, right, pivotIndex})
+\STATE int \textbf{partition}(\emph{PMarray, left, right, pivotIndex})
 \STATE pivotValue = PMarray[pivotIndex]
 \STATE swap PMarray[pivotIndex] and PMarray[right]
 \STATE storeIndex = left
@@ -134,6 +151,7 @@ off the PM's if any of the PM's become empty after consolidation.
 \ENDFOR
 \RETURN \emph{storeIndex}
 \end{algorithmic}
+\mbox{}\\\\
 \textbf{ void switchOffPM(PM\textunderscore ID)}
 \\
 \textbf{Description :} This function switches off the specified PM.
@@ -153,6 +171,7 @@ off the PM's if any of the PM's become empty after consolidation.
 \ENDIF
 \ENDFOR
 \end{algorithmic}
+\mbox{}\\\\
 \textbf{ void switchOnPM(PM\textunderscore ID)}
 \\
 \textbf{Description :} This function switches on the specified PM.

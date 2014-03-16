@@ -55,28 +55,7 @@ Different fields in VMstruct data structure are
 \end{enumerate}
 This is the structure used by PM modifier to create a VM.
 \subsubsection{Interface Functions}
-\textbf{ void deleteVM(VM\textunderscore ID)}
-\\
-\textbf{Description :} The purpose of this function is to delete the VM which is passed as an input parameter to while calling this function.
-\\
-\textbf{Input parameters :} The VM\textunderscore ID of VM which has to be deleted.
-\\
-\textbf{Output parameters :} NONE.
-\\
-\textbf{Return Values :} None, because all the error conditions that may arise are handled by data validation in user interface.
-\\
-\textbf{Pseudocode :}
-\begin{algorithmic}[1]
-\STATE void deleteVM(\emph{VM\textunderscore ID)}
-\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
-\FOR {\textbf{each} \emph{VMstruct} \textbf{in} \emph{VMarray}}
-\IF {\emph{VM\textunderscore ID} matches}
-\STATE delete this VM
-\ENDIF
-\ENDFOR
-\ENDFOR
-\end{algorithmic}
-\textbf{ void addVM(cap)}
+\textbf{void addVM(cap)}
 \\
 \textbf{Description :} This function checks the PM's if there is enough capacity available and if available adds the VM to it. If there is no enough capacity 
 it returns an error.
@@ -97,6 +76,69 @@ it returns an error.
 \ENDIF
 \ENDFOR
 \end{algorithmic}
+\mbox{}\\\\
+\textbf{void deleteVM(VM\textunderscore ID)}
+\\
+\textbf{Description :} The purpose of this function is to delete the VM which is passed as an input parameter to while calling this function.
+\\
+\textbf{Input parameters :} The VM\textunderscore ID of VM which has to be deleted.
+\\
+\textbf{Output parameters :} NONE.
+\\
+\textbf{Return Values :} None, because all the error conditions that may arise are handled by data validation in user interface.
+\\
+\textbf{Pseudocode :}
+\begin{algorithmic}[1]
+\STATE void deleteVM(\emph{VM\textunderscore ID)}
+\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
+\FOR {\textbf{each} \emph{VMstruct} \textbf{in} \emph{VMarray}}
+\IF {\emph{VM\textunderscore ID} matches}
+\STATE delete this VM
+\ENDIF
+\ENDFOR
+\ENDFOR
+\end{algorithmic}
+\mbox{}\\\\
+\textbf{ void switchOffPM(PM\textunderscore ID)}
+\\
+\textbf{Description :} This function switches off the specified PM.
+\\
+\textbf{Input parameters :} PM ID of the PM which has to be switched off.
+\\
+\textbf{Output parameters :} NONE.
+\\
+\textbf{Return Values :} Returns error if the VM's in the current PM can't be consolidated in to other PM's.
+\\
+\textbf{Pseudocode :}
+\begin{algorithmic}[1]
+\STATE void switchOffPM(\emph{PM\textunderscore ID})
+\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
+\IF {\emph{PM\textunderscore ID} matches}
+\STATE change onState to OFF
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\mbox{}\\\\
+\textbf{ void switchOnPM(PM\textunderscore ID)}
+\\
+\textbf{Description :} This function switches on the specified PM.
+\\
+\textbf{Input parameters :} PM ID of the PM which has to be switched on.
+\\
+\textbf{Output parameters :} NONE.
+\\
+\textbf{Return Values :} No possible error condition.
+\\
+\textbf{Pseudocode :}
+\begin{algorithmic}[1]
+\STATE void switchOnPM(\emph{PM\textunderscore ID})
+\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
+\IF {\emph{PM\textunderscore ID} matches}
+\STATE change onState to ON
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\mbox{}\\\\
 \textbf{ void consolidate()}
 \\
 \textbf{Description :} The function runs the consolidation algorithm to consolidate VM's in PM's and swithces 
@@ -122,7 +164,11 @@ off the PM's if any of the PM's become empty after consolidation.
 \ENDFOR
 \ENDFOR
 \ENDFOR
-\STATE void quicksort(\emph{PMarray,lo,hi})
+\end{algorithmic}
+\mbox{}\\\\
+Method used to sort PM's and VM's.
+\begin{algorithmic}[1]
+\STATE void \textbf{quicksort}(\emph{PMarray,lo,hi})
 \IF {\emph{lo} $ < $ \emph{hi}}
 \STATE p = pivot(\emph{PMarray,lo,hi})
 \STATE left, right = partition(\emph{PMarray, p, lo, hi})
@@ -130,8 +176,9 @@ off the PM's if any of the PM's become empty after consolidation.
 \STATE quicksort(\emph{PMarray, right, hi})
 \ENDIF
 \end{algorithmic}
+\mbox{}\\\\
 \begin{algorithmic}[1]
-\STATE int partition(\emph{PMarray, left, right, pivotIndex})
+\STATE int \textbf{partition}(\emph{PMarray, left, right, pivotIndex})
 \STATE pivotValue = PMarray[pivotIndex]
 \STATE swap PMarray[pivotIndex] and PMarray[right]
 \STATE storeIndex = left
@@ -143,43 +190,5 @@ off the PM's if any of the PM's become empty after consolidation.
 \STATE swap \emph{PMarray[storeIndex]} and \emph{PMarray[right]}
 \ENDFOR
 \RETURN \emph{storeIndex}
-\end{algorithmic}
-\textbf{ void switchOffPM(PM\textunderscore ID)}
-\\
-\textbf{Description :} This function switches off the specified PM.
-\\
-\textbf{Input parameters :} PM ID of the PM which has to be switched off.
-\\
-\textbf{Output parameters :} NONE.
-\\
-\textbf{Return Values :} Returns error if the VM's in the current PM can't be consolidated in to other PM's.
-\\
-\textbf{Pseudocode :}
-\begin{algorithmic}[1]
-\STATE void switchOffPM(\emph{PM\textunderscore ID})
-\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
-\IF {\emph{PM\textunderscore ID} matches}
-\STATE change onState to OFF
-\ENDIF
-\ENDFOR
-\end{algorithmic}
-\textbf{ void switchOnPM(PM\textunderscore ID)}
-\\
-\textbf{Description :} This function switches on the specified PM.
-\\
-\textbf{Input parameters :} PM ID of the PM which has to be switched on.
-\\
-\textbf{Output parameters :} NONE.
-\\
-\textbf{Return Values :} No possible error condition.
-\\
-\textbf{Pseudocode :}
-\begin{algorithmic}[1]
-\STATE void switchOnPM(\emph{PM\textunderscore ID})
-\FOR {\textbf{each} \emph{PMstruct} \textbf{in} \emph{PMarray}}
-\IF {\emph{PM\textunderscore ID} matches}
-\STATE change onState to ON
-\ENDIF
-\ENDFOR
 \end{algorithmic}
 \end{document}
