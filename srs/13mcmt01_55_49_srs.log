@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.2.2)  5 FEB 2014 12:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  21 MAR 2014 23:16
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **13mcmt01_55_49_srs.tex
-(E:\se\docse\srs\13mcmt01_55_49_srs.tex
+(./13mcmt01_55_49_srs.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/share/texmf/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,31 +23,31 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texmf/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texmf/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -62,7 +55,9 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(E:\se\docse\srs\13mcmt01_55_49_srs.aux)
+(./13mcmt01_55_49_srs.aux)
+\openout1 = `13mcmt01_55_49_srs.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -75,8 +70,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -89,7 +83,54 @@ LaTeX Font Info:    ... okay on input line 7.
 \MPnumerator=\count92
 \makeMPintoPDFobject=\count93
 \everyMPtoPDFconversion=\toks16
+) (/usr/share/texmf/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texmf/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texmf/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texmf/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texmf/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -98,39 +139,41 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(E:\se\docse\srs\13mcmt01_55_49_srs.toc
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./13mcmt01_55_49_srs.to
+c
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
 )
 \tf@toc=\write3
+\openout3 = `13mcmt01_55_49_srs.toc'.
+
  [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
 
-<images/gui.png, id=13, 368.87813pt x 316.93407pt>
-File: images/gui.png Graphic file (type png)
- <use images/gui.png>
-Package pdftex.def Info: images/gui.png used on input line 30.
+<images/gui.PNG, id=14, 368.87813pt x 316.93407pt>
+File: images/gui.PNG Graphic file (type png)
+ <use images/gui.PNG>
+Package pdftex.def Info: images/gui.PNG used on input line 30.
 (pdftex.def)             Requested size: 331.18797pt x 284.52756pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--34
 
  []
 
-[3 <E:/se/docse/srs/images/gui.png>]
+[3 <./images/gui.PNG>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-
-<images/usecase.png, id=20, 408.02437pt x 198.7425pt>
+ <images/usecase.png, id=21, 408.02437pt x 198.7425pt>
 File: images/usecase.png Graphic file (type png)
- <use images/usecase.png>
+
+<use images/usecase.png>
 Package pdftex.def Info: images/usecase.png used on input line 50.
 (pdftex.def)             Requested size: 408.02338pt x 198.742pt.
 
@@ -139,102 +182,102 @@ Overfull \hbox (75.39844pt too wide) in paragraph at lines 49--52
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--66
+Underfull \hbox (badness 10000) in paragraph at lines 56--65
 
  []
 
-[4 <E:/se/docse/srs/images/usecase.png>]
-<images/delete.png, id=24, 373.395pt x 100.375pt>
+[4 <./images/usecase.png>] <images/delete.png, id=25, 373.395pt x 100.375pt>
 File: images/delete.png Graphic file (type png)
- <use images/delete.png>
-Package pdftex.def Info: images/delete.png used on input line 67.
+
+<use images/delete.png>
+Package pdftex.def Info: images/delete.png used on input line 66.
 (pdftex.def)             Requested size: 373.39409pt x 100.37474pt.
 
-Overfull \hbox (40.76915pt too wide) in paragraph at lines 66--69
+Overfull \hbox (40.76915pt too wide) in paragraph at lines 65--68
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
-<images/shut.png, id=25, 335.00156pt x 155.83218pt>
+<images/shut.png, id=26, 335.00156pt x 155.83218pt>
 File: images/shut.png Graphic file (type png)
  <use images/shut.png>
-Package pdftex.def Info: images/shut.png used on input line 88.
+Package pdftex.def Info: images/shut.png used on input line 87.
 (pdftex.def)             Requested size: 335.00073pt x 155.8318pt.
 
-Overfull \hbox (2.3758pt too wide) in paragraph at lines 87--90
+Overfull \hbox (2.3758pt too wide) in paragraph at lines 86--89
 [] 
  []
 
-[5 <E:/se/docse/srs/images/delete.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--99
+[5 <./images/delete.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 90--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--99
+Underfull \hbox (badness 10000) in paragraph at lines 90--98
 
  []
 
-<images/onpm.png, id=29, 530.73282pt x 200.24812pt>
-File: images/onpm.png Graphic file (type png)
- <use images/onpm.png>
-Package pdftex.def Info: images/onpm.png used on input line 101.
+<images/onpm.PNG, id=30, 530.73282pt x 200.24812pt>
+File: images/onpm.PNG Graphic file (type png)
+ <use images/onpm.PNG>
+Package pdftex.def Info: images/onpm.PNG used on input line 100.
 (pdftex.def)             Requested size: 371.51044pt x 140.17273pt.
 
-Overfull \hbox (38.8855pt too wide) in paragraph at lines 100--103
+Overfull \hbox (38.8855pt too wide) in paragraph at lines 99--102
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--108
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
 
  []
 
-[6 <E:/se/docse/srs/images/shut.png> <E:/se/docse/srs/images/onpm.png>]
-<images/consolidate.png, id=34, 341.77687pt x 142.28156pt>
+[6 <./images/shut.png> <./images/onpm.PNG>]
+<images/consolidate.png, id=35, 341.77687pt x 142.28156pt>
 File: images/consolidate.png Graphic file (type png)
 
 <use images/consolidate.png>
-Package pdftex.def Info: images/consolidate.png used on input line 112.
+Package pdftex.def Info: images/consolidate.png used on input line 111.
 (pdftex.def)             Requested size: 341.77603pt x 142.2812pt.
 
-Overfull \hbox (9.1511pt too wide) in paragraph at lines 111--114
+Overfull \hbox (9.1511pt too wide) in paragraph at lines 110--113
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
-[7 <E:/se/docse/srs/images/consolidate.png>]
-(E:\se\docse\srs\13mcmt01_55_49_srs.aux) ) 
+[7 <./images/consolidate.png>] (./13mcmt01_55_49_srs.aux) ) 
 Here is how much of TeX's memory you used:
- 1183 strings out of 493921
- 15758 string characters out of 3147277
- 66106 words of memory out of 3000000
- 4505 multiletter control sequences out of 15000+200000
- 8811 words of font info for 31 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 27i,6n,19p,315b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 13mcmt01_55_49_srs.pdf (7 pages, 135884 bytes).
+ 1546 strings out of 493315
+ 21652 string characters out of 6145893
+ 79301 words of memory out of 5000000
+ 4989 multiletter control sequences out of 15000+600000
+ 8811 words of font info for 31 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,6n,23p,315b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on 13mcmt01_55_49_srs.pdf (7 pages, 129187 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
