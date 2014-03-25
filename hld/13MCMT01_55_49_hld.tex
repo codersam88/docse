@@ -45,7 +45,7 @@ This module is responsible for creating physical machines(PM), adding virtual ma
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=11cm]{images/dfd.jpg}
+\includegraphics[height=11cm]{images/dfd.png}
 \caption{Data flow diagram}
 \label{fig:modules}
 
@@ -169,12 +169,12 @@ The operations of this module include creating a PM, adding VM's to it, calculat
   \textit{Calls} \> : showPm of User Interface Module.
 \end{tabbing}
 \pagebreak
-\textbf{addVm(cap)}
+\textbf{addVm(VM\textunderscore ID, cap)}
   
 \begin{tabbing}
 \hspace*{4cm}\=  \kill
  \textit{Purpose} \> : The purpose of this function is to add VM's to the PM as specified\\ \> by the parser.\\
-  \textit{Input Parameters} \> : VM capacity. \\
+  \textit{Input Parameters} \> : VM ID and VM capacity. \\
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : If there is no enough space to add VM to a PM it outputs \\ \>\textbf{No enough space} message\\
   \textit{Called by} \> : Parser module \\
