@@ -1,26 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  30 MAR 2014 13:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  30 MAR 2014 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**3d1.tex
-(./3d1.tex
+**13MCMT01_49_55_ddd.tex
+(./13MCMT01_49_55_ddd.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 ï
-     »¿\documentclass[a4paper,11pt]{article}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no ï in font nullfont!
-Missing character: There is no » in font nullfont!
-Missing character: There is no ¿ in font nullfont!
 (/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/size11.clo
@@ -32,17 +17,12 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count82
 \c@paragraph=\count83
 \c@subparagraph=\count84
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--284
-[]
- []
-
 \c@figure=\count85
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-[1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+)
 (/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -86,8 +66,8 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \c@ALC@depth=\count91
 \ALC@tlm=\skip43
 \algorithmicindent=\skip44
-) (./3d1.aux)
-\openout1 = `3d1.aux'.
+) (./13MCMT01_49_55_ddd.aux)
+\openout1 = `13MCMT01_49_55_ddd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -169,23 +149,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
- (./3d1.toc)
+ [1
+
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./13MCMT01_49_55_ddd.to
+c
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+)
 \tf@toc=\write3
-\openout3 = `3d1.toc'.
+\openout3 = `13MCMT01_49_55_ddd.toc'.
 
- [2
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
 (/usr/share/texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
@@ -206,26 +190,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
-[3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 43.
-
-
-LaTeX Warning: File `3.png' not found on input line 63.
-
-
-! Package pdftex.def Error: File `3.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \includegraphics[height=6cm]{3.png}
-                                        
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[3] <images/3.png, id=18, 547.04375pt x 304.13625pt>
+File: images/3.png Graphic file (type png)
+ <use images/3.png>
+Package pdftex.def Info: images/3.png used on input line 63.
+(pdftex.def)             Requested size: 307.0686pt x 170.71652pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
@@ -236,78 +205,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-[4]
+[4 <./images/3.png>] <images/1.png, id=24, 282.05376pt x 204.765pt>
+File: images/1.png Graphic file (type png)
 
-LaTeX Warning: File `1.png' not found on input line 90.
+<use images/1.png>
+Package pdftex.def Info: images/1.png used on input line 90.
+(pdftex.def)             Requested size: 195.97298pt x 142.26378pt.
+ <images/2.png, id=25, 545.03625pt x 348.30125pt>
+File: images/2.png Graphic file (type png)
 
-
-! Package pdftex.def Error: File `1.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 \includegraphics[height=5cm]{1.png}
-                                        
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `2.png' not found on input line 95.
-
-
-! Package pdftex.def Error: File `2.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 \includegraphics[height=6cm]{2.png}
-                                        
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 95.
+(pdftex.def)             Requested size: 267.14494pt x 170.71652pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: File `7.png' not found on input line 100.
-
-
-! Package pdftex.def Error: File `7.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100  \includegraphics[height=3cm]{7.png}
-                                          
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<images/7.png, id=26, 280.04625pt x 132.495pt>
+File: images/7.png Graphic file (type png)
+ <use images/7.png>
+Package pdftex.def Info: images/7.png used on input line 100.
+(pdftex.def)             Requested size: 180.41692pt x 85.35826pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
+[5 <./images/1.png>] <images/8.png, id=31, 350.30875pt x 131.49126pt>
+File: images/8.png Graphic file (type png)
 
-LaTeX Warning: File `8.png' not found on input line 111.
-
-
-! Package pdftex.def Error: File `8.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111  \includegraphics[scale=0.5, angle=0]{8.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use images/8.png>
+Package pdftex.def Info: images/8.png used on input line 111.
+(pdftex.def)             Requested size: 175.15395pt x 65.74545pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--116
 
@@ -323,7 +251,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--116
 
  []
 
-[6]
+[6 <./images/2.png> <./images/7.png> <./images/8.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
@@ -338,22 +266,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
-
-LaTeX Warning: File `4.png' not found on input line 160.
-
-
-! Package pdftex.def Error: File `4.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 \includegraphics[scale=0.8, angle=0]{4.png}
-                                                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<images/4.png, id=35, 333.245pt x 195.73125pt>
+File: images/4.png Graphic file (type png)
+ <use images/4.png>
+Package pdftex.def Info: images/4.png used on input line 160.
+(pdftex.def)             Requested size: 266.59634pt x 156.58519pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
@@ -369,23 +286,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
  []
 
-[7]
-
-LaTeX Warning: File `5.png' not found on input line 191.
-
-
-! Package pdftex.def Error: File `5.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \includegraphics[scale=0.6, angle=0]{5.png}
-                                                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[7] <images/5.png, id=40, 432.61626pt x 243.91125pt>
+File: images/5.png Graphic file (type png)
+ <use images/5.png>
+Package pdftex.def Info: images/5.png used on input line 191.
+(pdftex.def)             Requested size: 259.57176pt x 146.34787pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
@@ -401,7 +306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
-[8]
+[8 <./images/4.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 211--215
 
  []
@@ -416,7 +321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--215
 
  []
 
-
+[9 <./images/5.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
@@ -437,7 +342,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
-[9] [10]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
@@ -493,27 +398,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
-[14] (./3d1.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--452
+
+ []
+
+[14] [15] (./13MCMT01_49_55_ddd.aux) ) 
 Here is how much of TeX's memory you used:
- 1707 strings out of 493315
- 22923 string characters out of 6145893
- 86089 words of memory out of 5000000
- 5147 multiletter control sequences out of 15000+600000
- 9624 words of font info for 34 fonts, out of 8000000 for 9000
+ 1734 strings out of 493315
+ 23568 string characters out of 6145893
+ 86099 words of memory out of 5000000
+ 5174 multiletter control sequences out of 15000+600000
+ 9456 words of font info for 33 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,8n,23p,264b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 3d1.pdf (14 pages, 145529 bytes).
+ 37i,9n,23p,300b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/ams
+fonts/cm/cmti10.pfb>
+Output written on 13MCMT01_49_55_ddd.pdf (15 pages, 185567 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
