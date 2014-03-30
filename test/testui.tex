@@ -1,0 +1,93 @@
+\documentclass[a4paper,10pt]{article}
+\begin{document}
+\section{User Interface Module}
+\subsection{Test Plan}
+Features to be tested.
+\begin{enumerate}
+ \item Adding VM 
+ \item Deleting VM
+ \item Switching off PM
+ \item Switching on PM
+ \item consolidating the VM's
+ \end{enumerate}
+\subsection{Test cases}
+\subsubsection{Adding VM}
+\textbf{addVM-1:Adding VM when VM capacity is greater than residual capacity in a PM}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of addVM() when sufficient space is\\ \> not available in PM\\
+\emph{Input}\>: capacity of VM and VM ID for the VM to be added\\
+\emph{Expected output}\>: The error number related to insufficient residual capacity is returned\\
+\emph{Test Procedure}\>: addVM() function is called with VM capacity greater than the \\ \>residual capacity 
+in the first PM\\
+\end{tabbing}
+\textbf{addVM-2:Adding VM when VM capacity is less than or equal residual capacity in a PM}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of addVM() when sufficient space is\\ \> available in PM\\
+\emph{Input}\>: capacity of VM and VM ID for the VM to be added\\
+\emph{Expected output}\>: The VM will be added to any of the available PM's and it will be\\ \>reflected in GUI\\
+\emph{Test Procedure}\>: addVM() function is called with VM capacity less than or equal to the \\ \>residual capacity 
+in any PM\\
+\end{tabbing}
+\subsubsection{Deleting VM}
+\textbf{deletVM-1:Deleting VM }
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of deleteVM when valid input it given\\
+\emph{Input}\>: VM ID of the VM to be deleted\\
+\emph{Expected output}\>: The VM will be deleted and it will be reflected in GUI\\
+\emph{Test Procedure}\>: deleteVM() function is called with VM ID of the VM to be deleted\\
+\end{tabbing}
+\subsubsection{Switching off PM}
+\textbf{switchOffPM-1: Switching off PM when VM's in a specific PM can be consolidated in other PM's}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of switchOffPM when VM's in a specific\\ \> PM can be consolidated in other PM's\\
+\emph{Input}\>: PM ID of the PM to be switched off\\
+\emph{Expected output}\>: The PM will be switched off and it will be reflected in GUI\\
+\emph{Test Procedure}\>: switchOffVM() function is called on a filled PM when all other\\ \> PM's are empty\\
+\end{tabbing}
+\textbf{switchOffPM-2: Switching off PM when VM's in a specific PM cannot be consolidated in other PM's}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of switchOffPM when VM's in a specific\\ \> PM cannot be consolidated in other PM's\\
+\emph{Input}\>: PM ID of the PM to be switched off\\
+\emph{Expected output}\>: The PM will not be switched off and corresponding error message\\ \> will be returned\\
+\emph{Test Procedure}\>: switchOffVM() function is called on a filled PM when all other\\ \> PM's are almost full\\
+\end{tabbing}
+\subsubsection{Switching on PM}
+\textbf{switchOnPM-1: Switching on a PM with was switched off}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the functionality of switchOnPM function\\
+\emph{Input}\>: PM ID of the PM to be switched on\\
+\emph{Expected output}\>: The PM will be switched on and it will be reflected in GUI\\
+\emph{Test Procedure}\>: switchOnPM() function is called on a PM in off state\\
+\end{tabbing}
+\subsubsection{consolidate}
+\textbf{consolidate-1: check the operation of consolidation function when all PM's except one are empty }
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the operation of consolidation function when all PM's except one are empty\\
+\emph{Input}\>: NONE\\
+\emph{Expected output}\>: An error code saying no need of consolidation will be sent \\
+\emph{Test Procedure}\>: consolidate() function will be called keeping all PM's\\ \> except one empty.\\
+\end{tabbing}
+\textbf{consolidate-2: check the operation of consolidation function when all the PM's are filled and we can empty atleast one PM}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the operation of consolidation function when all the\\ \> PM's are filled and we can empty at least one PM\\
+\emph{Input}\>: NONE\\
+\emph{Expected output}\>: PM's will be  consolidated such that at least one will\\ \> be emptied completely\\
+\emph{Test Procedure}\>: consolidate() function will be called with a configuration\\ \> such that emptying atleast one PM completely is possible .\\
+\end{tabbing}
+\textbf{consolidate-3: check the operation of consolidation function when all the PM's are filled and none of the PM can be completely emptied}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check the operation of consolidation function when all the\\ \> PM's are filled and none of the PM can be completely emptied\\
+\emph{Input}\>: NONE\\
+\emph{Expected output}\>: error message will be returned which tells consolidation\\ \> is not possible\\
+\emph{Test Procedure}\>: consolidate() function will be called with a configuration\\ \> such that emptying atleast one PM completely is not possible.\\
+\end{tabbing}
+\end{document}
