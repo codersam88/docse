@@ -21,7 +21,8 @@
 		It computes the residual capacity in each physical machine after adding the 
 		virtual machines. The physical machines are sorted in ascending order of their residual capacity. 
 		The project provides the feature of consolidating the virtual machines in different physical machines into 
-		minimum number of physical machines. Another feature provided by this project is to shutdown a physical system
+		minimum number of physical machines. Another features provided by this project are switching on a physical 
+		machine and to shutdown a physical machine
 		by migrating the virtual machines in that physical machine into other physical machines. This project uses
 		greedy bin packing algorithm for this purpose. \section{SPECIFIC REQUIREMENTS}
 		\subsection{External Interface Requirements}
@@ -41,7 +42,7 @@
 			\subsubsection{Hardware Interfaces}
 			No specific hardware module is being used for this project
 			\subsubsection{Software Interfaces}
-			No specific hardware module is being used for this project 
+			No specific software module is being used for this project 
 			\subsubsection{Communication Protocols}
 			This project doesn’t use any communication protocols
 		\subsection{Software Product Features}
@@ -51,7 +52,7 @@
 				\\This action is triggered by user clicking {\bf Add VM } Button. A new window appears with fields for  
 				\begin{itemize}
 				 \item Capacity of the VM
-				 \item The PM in which to add the VM into
+				 \item VM ID to be given to the VM
 				\end{itemize}
 				
 				This would return \\
@@ -67,21 +68,14 @@
 				\includegraphics{images/delete}
 				\\This action is triggered by user clicking {\bf Delete VM } Button. A new window appears with fields for  
 				\begin{itemize}
-				 \item Choosing the PM in which the VM we want to delete resides
-				 \item The ID of the VM that we want to delete
+				 \item The user has to select the  ID of the VM that we want to delete from the drop down list. Only VM's that are 
+				 present in the PM's will be displayed in the list.
 				\end{itemize}
 				
 				This would return \\
 				{\bf On Success: }\\
 				The GUI will be updated showing that new  VM that is deleted from the PM.
 				The residual capacity of the PM is calculated and update to reflect in GUI\\\\
-				{\bf On Failure: } \\
-				{\bf Reason: The selected PM is empty or switched off}\\
-				The user will get an error message that the particular PM which you have selected is empty or 
-				switched off
-				
-				%\item Displays the details of which vm is in which pm
-				
 				
 				\item {\bf Ability to switch off a physical machine}\\
 				\includegraphics{images/shut}
@@ -95,6 +89,18 @@
 				{\bf On Failure: } \\
 				{\bf Reason: VM's in the selected PM cannot be accomodated in other PM's}\\
 				The user will get a message stating that the VM's in the selected PM cannot be accomodated in other PM's.
+				
+				\item {\bf Ability to switch on a physical machine}\\
+				\includegraphics[scale=0.7]{images/onpm}
+				\\This action is triggered by user clicking on the PM which he wants to switch on. 
+				
+				This would result in \\\\
+				{\bf On Success: }\\
+				The PM will be switched on. The color of the PM is changed from red to green to reflect the on 
+				status of PM in GUI 
+				
+				
+				
 				\item {\bf Provides the ability to consolidate all VM's in minimum number of PM's}\\
 				\includegraphics{images/consolidate}
  				\\This action is fired by user clicking the {\bf consolidate} Button. 

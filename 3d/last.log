@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2013.7.12)  29 MAR 2014 17:17
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2013.7.12)  29 MAR 2014 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**3d2.tex
-(./3d2.tex
+**last.tex
+(./last.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
@@ -68,8 +68,8 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \c@ALC@depth=\count91
 \ALC@tlm=\skip43
 \algorithmicindent=\skip44
-) (./3d2.aux)
-\openout1 = `3d2.aux'.
+) (./last.aux)
+\openout1 = `last.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -150,12 +150,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 8.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./3d2.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./last.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `3d2.toc'.
+\openout3 = `last.toc'.
 
  [2]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
@@ -169,34 +169,34 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--49
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
 [3] <3.png, id=18, 547.04375pt x 304.13625pt>
 File: 3.png Graphic file (type png)
  <use 3.png>
-Underfull \hbox (badness 10000) in paragraph at lines 75--79
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--79
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
@@ -218,192 +218,182 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [5 <./1.png (PNG copy)>] <8.png, id=31, 350.30875pt x 131.49126pt>
 File: 8.png Graphic file (type png)
  <use 8.png>
-Underfull \hbox (badness 10000) in paragraph at lines 112--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--116
 
  []
 
 [6 <./2.png (PNG copy)> <./7.png (PNG copy)> <./8.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--148
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 <4.png, id=35, 333.245pt x 195.73125pt>
 File: 4.png Graphic file (type png)
  <use 4.png>
-Underfull \hbox (badness 10000) in paragraph at lines 171--178
+Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--178
+Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--178
+Underfull \hbox (badness 10000) in paragraph at lines 163--170
 
  []
 
 [7] <5.png, id=40, 432.61626pt x 243.91125pt>
 File: 5.png Graphic file (type png)
  <use 5.png>
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
 [8 <./4.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 211--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 211--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 211--215
 
  []
 
 [9 <./5.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--245
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--245
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 
-Overfull \hbox (19.38516pt too wide) in paragraph at lines 241--245
+Overfull \hbox (19.38516pt too wide) in paragraph at lines 233--237
 \OT1/cmr/m/n/10.95 clicks a PM which is turned on,changes its state to OFF by c
 all-ing switchOffPM()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--245
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--272
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--272
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 323--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 345--359
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 350--362
+Underfull \hbox (badness 10000) in paragraph at lines 367--379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--386
+Underfull \hbox (badness 10000) in paragraph at lines 387--400
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 394--406
+Underfull \hbox (badness 10000) in paragraph at lines 414--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--427
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 441--443
-
- []
-
-
-Overfull \hbox (48.71883pt too wide) in paragraph at lines 441--443
+Overfull \hbox (48.71883pt too wide) in paragraph at lines 414--416
 \OT1/cmr/m/n/10.95 Method used to sort PM's and VM's.                          
                             
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
-[15] (./3d2.aux) ) 
+[14] (./last.aux) ) 
 Here is how much of TeX's memory you used:
  1544 strings out of 493747
- 20256 string characters out of 3151242
+ 20267 string characters out of 3151242
  78777 words of memory out of 3500000
  4831 multiletter control sequences out of 15000+200000
  9456 words of font info for 33 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 37i,9n,23p,269b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on 3d2.pdf (15 pages, 194354 bytes).
+ 37i,9n,23p,286b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmti10.pfb
+>
+Output written on last.pdf (14 pages, 193615 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

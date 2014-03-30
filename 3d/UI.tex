@@ -107,7 +107,7 @@ The selected input file is passed to the parser module. \\
 \includegraphics[scale=0.8, angle=0]{4.png}
 \caption{VM Deletion}
 \end{figure}
-\pagebreak
+\mbox{}\\\\
 \emph{\bf callConsolidate()}\\\\
 On clicking consolidate button in UI it opens a window for confirmation from the user \\
 If the user chooses not to consolidate the state of the system does not change.\\
@@ -138,7 +138,35 @@ If the user chooses to consolidate ,  then conolidate() funtion in PM modifier i
 \includegraphics[scale=0.6, angle=0]{5.png}
 \caption{Consolidation}
 \end{figure} 
-\pagebreak
+\mbox{}\\\\
+\textbf{ callReset()}\\\\
+On clicking reset button in user interface, a window opens for confirmation from the user.\\
+If the user chooses to reset then all the VMs in the present system are deleted and  a new input is loaded again.\\
+If the user does not wish to reset, then there is no change in  state of the sytsem. \\
+  \begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Input parameters}\>: Click event \\
+\emph{Output parameters}\>: None \\
+\emph{Return values}\>: Updated UI\\
+\emph{Error conditions}\>: None\\
+\end{tabbing}
+\textbf{Pseudo code :}
+\begin{algorithmic}[1]
+\STATE on clicking reset
+\STATE open dialog for confirmation
+\IF {confirmed}
+\STATE call reset() in PM modifier
+\STATE call updateUI()
+\ELSE 
+\STATE do nothing
+\ENDIF
+\end{algorithmic}
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.6, angle=0]{6.png}
+\caption{Reset}
+\end{figure} 
+\mbox{}\\\\
 \emph{\bf updateUI()}\\\\
 This function is called after every change performed on the system to reflect changes to the user.It calls the status() function in PM modifier module.
 \\\begin{tabbing}

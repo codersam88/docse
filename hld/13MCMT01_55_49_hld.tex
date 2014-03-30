@@ -34,7 +34,7 @@ This module is responsible for creating physical machines(PM), adding virtual ma
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{images/intrfc.jpg}
+\includegraphics[height=7cm]{images/intrfc.png}
 \caption{Interfaces between modules}
 \label{fig:interfaces}
 
@@ -45,7 +45,7 @@ This module is responsible for creating physical machines(PM), adding virtual ma
 
 \begin{figure}[h]
 \centering
-\includegraphics[height=11cm]{images/dfd.png}
+\includegraphics[height=11cm]{images/dfd.jpg}
 \caption{Data flow diagram}
 \label{fig:modules}
 
@@ -61,72 +61,14 @@ This module is responsible for creating physical machines(PM), adding virtual ma
  \item \textbf{Functionality}
  
  The main purpose of this module is to take input from the user and reflect the system state to the user. 
-  \item \textbf{Interface Description} 
-  
-  \textbf{showPm(PM\textunderscore NO)}
-  
-  
-%\begin{tabbing}
-%\hspace*{2cm}\=\hspace*{3cm}\= \kill
-%column1a \> column2a \> column3a \\
-%column1b \> column2b \> column3b 
-%\end{tabbing}
-\begin{tabbing}
-\hspace*{4cm}\=  \kill
- \textit{Purpose} \> : This function takes the input from the parse file and \\ \>creates a UI element for PM and displays it.\\
-  \textit{Input Parameter} \> : PM number \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : PM modifier module 
-  
-\end{tabbing}
-
-\begin{figure}[h]
+ \begin{figure}[h]
 \centering
 \includegraphics[height=7cm]{images/GUI.png}
 \caption{Main user interface}
 \label{fig:GUI}
 
 \end{figure}
-
-
-
-
-\textbf{showVm(VM\textunderscore ID)}
-  
-\begin{tabbing}
-\hspace*{4cm}\=  \kill
- \textit{Purpose} \> :This function takes the input from the parse file and \\ \>creates a UI element for VM and displays it in corresponding PM.\\
-  \textit{Input Parameter} \> : VM ID \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : PM modifier module 
-  
-\end{tabbing}
-
-\textbf{updateGui()}
-  
-\begin{tabbing}
-\hspace*{4cm}\=  \kill
- \textit{Purpose} \> :The purpose of this function is to update the GUI after\\ \> a modification has been done to a PM like adding a VM \\ \>or deleting a VM.\\
-  \textit{Input Parameter} \> : none \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : PM modifier module 
-  
-\end{tabbing}
-
-\textbf{load()}
-  
-\begin{tabbing}
-\hspace*{4cm}\=  \kill
- \textit{Purpose} \> :The purpose of this function is to get the file location\\ \> that has to be passed to parser.\\
-  \textit{Input Parameter} \> : none \\
-  \textit{Output Parameter} \> : The location of filename that parser uses \\
-  \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : Parse function of parser
-\end{tabbing}
-
-
 \end{itemize}
-
 \textbf{Parser}
 \begin{itemize}
 \item \textbf{Functionality}
@@ -142,10 +84,10 @@ It then initializes the PM's and adds VM's to them by the help of PM modifier mo
 \hspace*{4cm}\=  \kill
  \textit{Purpose} \> :The purpose of this function is to parse the file specified by the \\ \>user and extract information about PM's and VM's.\\
   \textit{Input Parameter} \> : file path specified by the user \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Return Value} \> : If the file is not in the specified format it would display \\ \>\textbf{wrong file format} message \\
+  \textit{Output Parameter} \> : VM ID and capacity \\
+  \textit{Return Value} \> : If the file is not in the specified format it would return \\ \>\textbf{wrong file format} message \\
   \textit{Called by} \> : User Interface module \\
-  \textit{Calls} \> : createPM and addVM functions of PM modifier
+  \textit{Calls} \> : addVM function of PM modifier
 \end{tabbing}
 \end{itemize}
 
@@ -157,49 +99,50 @@ It then initializes the PM's and adds VM's to them by the help of PM modifier mo
 The operations of this module include creating a PM, adding VM's to it, calculating the residual capacity and consolidation.
 
 \item \textbf{Interface Description} 
-
-\textbf{createPm(PM\textunderscore NO)}
+\\
+\textbf{addVM(VM\textunderscore ID, cap)}
   
 \begin{tabbing}
 \hspace*{4cm}\=  \kill
- \textit{Purpose} \> : The purpose of this function is to create a new PM as specified by\\ \> the parser.\\
-  \textit{Input Parameters} \> : PM number. \\
-  \textit{Output Parameter} \> : none \\
-  \textit{Called by} \> : Parser module \\
-  \textit{Calls} \> : showPm of User Interface Module.
-\end{tabbing}
-\pagebreak
-\textbf{addVm(VM\textunderscore ID, cap)}
-  
-\begin{tabbing}
-\hspace*{4cm}\=  \kill
- \textit{Purpose} \> : The purpose of this function is to add VM's to the PM as specified\\ \> by the parser.\\
+ \textit{Purpose} \> : The purpose of this function is to add VM's to the PM as \\ \>specified by Parser module and UI module.\\
   \textit{Input Parameters} \> : VM ID and VM capacity. \\
   \textit{Output Parameter} \> : none \\
   \textit{Return Value} \> : If there is no enough space to add VM to a PM it outputs \\ \>\textbf{No enough space} message\\
-  \textit{Called by} \> : Parser module \\
-  \textit{Calls} \> : showVm of User Interface Module.
+  \textit{Called by} \> : Parser module and UI module\\
+  \textit{Calls} \> : NONE.
 \end{tabbing}
 
-\textbf{deleteVm(VM\textunderscore ID)}
+\textbf{deleteVM(VM\textunderscore ID)}
   
 \begin{tabbing}
 \hspace*{4cm}\=  \kill
  \textit{Purpose} \> : The purpose of this function is to delete a VM specified by the user.\\
-  \textit{Input Parameters} \> : PM number in which VM resides and VM ID. \\
+  \textit{Input Parameters} \> : VM ID. \\
   \textit{Output Parameter} \> : none \\
  \textit{Called by} \> : User Interface module \\
   \textit{Calls} \> : none.
 \end{tabbing}
 
-\textbf{switchOffPm(PM\textunderscore NO)}
+\textbf{switchOffPM(PM\textunderscore NO)}
   
 \begin{tabbing}
 \hspace*{4cm}\=  \kill
  \textit{Purpose} \> : The purpose of this function is to switch off a PM specified by user.\\
   \textit{Input Parameters} \> : PM number. \\
   \textit{Output Parameter} \> : none \\
-  \textit{Return Value} \> : Displays \textbf{It is not possible to switch off this PM at this time} if \\ \>switching off was not successful. \\
+  \textit{Return Value} \> : Returns \textbf{It is not possible to switch off}\\ \> \textbf{this PM at this time} if switching off was not successful. \\
+  \textit{Called by} \> : User Interface module \\
+  \textit{Calls} \> : none.
+\end{tabbing}
+
+\textbf{switchOnPM(PM\textunderscore NO)}
+  
+\begin{tabbing}
+\hspace*{4cm}\=  \kill
+ \textit{Purpose} \> : The purpose of this function is to switch on a PM specified by user.\\
+  \textit{Input Parameters} \> : PM number. \\
+  \textit{Output Parameter} \> : none \\
+  \textit{Return Value} \> : none \\
   \textit{Called by} \> : User Interface module \\
   \textit{Calls} \> : none.
 \end{tabbing}
@@ -214,6 +157,16 @@ The operations of this module include creating a PM, adding VM's to it, calculat
     \textit{Called by} \> : User Interface module \\
   \textit{Calls} \> : none.
 \end{tabbing}
+\pagebreak
+\textbf{status( )}
+  
+\begin{tabbing}
+\hspace*{4cm}\=  \kill
+ \textit{Purpose} \> : The purpose of this function is to return the information \\ \>about all the PM's and the VM's in them.\\
+  \textit{Input Parameters} \> : none \\
+  \textit{Output Parameter} \> : information about the system \\
+    \textit{Called by} \> : User Interface module \\
+  \textit{Calls} \> : none.
+\end{tabbing}
 \end{itemize}
-
 \end{document}
