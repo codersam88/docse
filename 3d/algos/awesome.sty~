@@ -1,3 +1,0 @@
-\newcommand{\wbal}{The Wikibook about \LaTeX}
-\newcommand{\boldit}[1]{\textbf{\emph{ #1}}}
-%\newcommand{bi2}[2]{$ #1^2 + #2^2 + 2 #1 /times #2$}

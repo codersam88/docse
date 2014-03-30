@@ -1,2 +1,0 @@
-\newcommand{\wbal}{The Wikibook about \LaTeX}
-\newcommand{\boldit}[1]{\textbf{\emph{ #1}}}
