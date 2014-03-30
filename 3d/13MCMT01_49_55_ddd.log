@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  30 MAR 2014 14:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  30 MAR 2014 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,13 +209,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--71
 File: images/1.png Graphic file (type png)
 
 <use images/1.png>
-Package pdftex.def Info: images/1.png used on input line 90.
+Package pdftex.def Info: images/1.png used on input line 93.
 (pdftex.def)             Requested size: 195.97298pt x 142.26378pt.
  <images/2.png, id=25, 545.03625pt x 348.30125pt>
 File: images/2.png Graphic file (type png)
 
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 95.
+Package pdftex.def Info: images/2.png used on input line 98.
 (pdftex.def)             Requested size: 267.14494pt x 170.71652pt.
 
 
@@ -224,7 +224,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/7.png, id=26, 280.04625pt x 132.495pt>
 File: images/7.png Graphic file (type png)
  <use images/7.png>
-Package pdftex.def Info: images/7.png used on input line 100.
+Package pdftex.def Info: images/7.png used on input line 103.
 (pdftex.def)             Requested size: 180.41692pt x 85.35826pt.
 
 
@@ -234,172 +234,172 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/8.png Graphic file (type png)
 
 <use images/8.png>
-Package pdftex.def Info: images/8.png used on input line 111.
+Package pdftex.def Info: images/8.png used on input line 114.
 (pdftex.def)             Requested size: 175.15395pt x 65.74545pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--116
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--116
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--116
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
 
  []
 
 [6 <./images/2.png> <./images/7.png> <./images/8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
 
 <images/4.png, id=35, 333.245pt x 195.73125pt>
 File: images/4.png Graphic file (type png)
  <use images/4.png>
-Package pdftex.def Info: images/4.png used on input line 160.
+Package pdftex.def Info: images/4.png used on input line 163.
 (pdftex.def)             Requested size: 266.59634pt x 156.58519pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--170
+Underfull \hbox (badness 10000) in paragraph at lines 166--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--170
+Underfull \hbox (badness 10000) in paragraph at lines 166--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--170
+Underfull \hbox (badness 10000) in paragraph at lines 166--173
 
  []
 
 [7] <images/5.png, id=40, 432.61626pt x 243.91125pt>
 File: images/5.png Graphic file (type png)
  <use images/5.png>
-Package pdftex.def Info: images/5.png used on input line 191.
+Package pdftex.def Info: images/5.png used on input line 194.
 (pdftex.def)             Requested size: 259.57176pt x 146.34787pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
  []
 
 [8 <./images/4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--215
+Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
 [9 <./images/5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
 
  []
 
 
-Overfull \hbox (19.38516pt too wide) in paragraph at lines 233--237
+Overfull \hbox (19.38516pt too wide) in paragraph at lines 236--240
 \OT1/cmr/m/n/10.95 clicks a PM which is turned on,changes its state to OFF by c
 all-ing switchOffPM()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 323--335
+Underfull \hbox (badness 10000) in paragraph at lines 326--338
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--359
+Underfull \hbox (badness 10000) in paragraph at lines 348--362
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 367--379
+Underfull \hbox (badness 10000) in paragraph at lines 370--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--400
+Underfull \hbox (badness 10000) in paragraph at lines 390--403
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 414--416
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
 
  []
 
 
-Overfull \hbox (48.71883pt too wide) in paragraph at lines 414--416
+Overfull \hbox (48.71883pt too wide) in paragraph at lines 417--419
 \OT1/cmr/m/n/10.95 Method used to sort PM's and VM's.                          
                             
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--452
+Underfull \hbox (badness 10000) in paragraph at lines 443--455
 
  []
 
@@ -420,7 +420,7 @@ sfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 </usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on 13MCMT01_49_55_ddd.pdf (15 pages, 185567 bytes).
+Output written on 13MCMT01_49_55_ddd.pdf (15 pages, 185645 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream

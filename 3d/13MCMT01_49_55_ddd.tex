@@ -2,7 +2,7 @@
 \usepackage{graphicx}
 \usepackage{algorithmic}
 \title{High Level Design Document \\ Bin-packing VM Consolidation Algorithm}
-\author{Terli Venkatesh 13MCMT55 \\ Atchutuni Bhavana 13MCMT01 \\ Surineni Sampath Kumar 13MCMT49}
+\author{Atchutuni Bhavana 13MCMT01 \\ Surineni Sampath Kumar 13MCMT49 \\ Terli Venkatesh 13MCMT55}
 \date{}
 \begin{document}
 \maketitle
@@ -41,11 +41,11 @@ This module is invoked by the GUI module to read the data from the input file gi
 \begin{algorithmic}[1]
 \STATE open the input file which was given by GUI. 
 \IF{$fp == NULL$} 
-\STATE show the message you entered nonexisting filename.
+\STATE return the error you entered nonexisting filename.
 \ENDIF
 \STATE check whether file is empty or not.
 \IF{no data in file}
-\STATE show the message empty file.
+\STATE return the error empty file.
 \ELSE
 \STATE Read the each line and send that value to addVM(VM\textunderscore ID, capacity) in PM-modifier module
 \STATE this step will repeat untill we we read all the lines.
@@ -80,6 +80,9 @@ The selected input filename is passed to the parser module. \\
  \STATE open file chooser
   \IF {file choosen}
   \STATE call parser(filename) in parser module
+  \IF {error is returned}
+  \STATE display the error message
+  \ENDIF
   \STATE call updateUI()
   \ELSE 
   \STATE no change
