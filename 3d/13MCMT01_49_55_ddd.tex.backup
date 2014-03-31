@@ -301,7 +301,7 @@ Different fields in VMstruct data structure are
  \item VM\textunderscore ID - String
  \item cap - integer
 \end{enumerate}
-This is the structure used by PM modifier to create a VM. We maintain array of VM's for each PM.
+This is the structure used by PM modifier to create a VM.
 \subsubsection{Interface Functions}
 \textbf{void addVM(VM\textunderscore ID, cap)}
 \\

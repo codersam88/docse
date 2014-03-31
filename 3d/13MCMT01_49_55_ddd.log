@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  30 MAR 2014 21:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.3.15)  31 MAR 2014 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -348,58 +348,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--280
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 326--338
+Underfull \hbox (badness 10000) in paragraph at lines 327--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--362
+Underfull \hbox (badness 10000) in paragraph at lines 349--363
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 370--382
+Underfull \hbox (badness 10000) in paragraph at lines 371--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--403
+Underfull \hbox (badness 10000) in paragraph at lines 391--404
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 417--419
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
 
  []
 
 
-Overfull \hbox (48.71883pt too wide) in paragraph at lines 417--419
+Overfull \hbox (48.71883pt too wide) in paragraph at lines 418--420
 \OT1/cmr/m/n/10.95 Method used to sort PM's and VM's.                          
                             
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--455
+Underfull \hbox (badness 10000) in paragraph at lines 444--456
 
  []
 
@@ -420,7 +420,7 @@ sfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 </usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on 13MCMT01_49_55_ddd.pdf (15 pages, 185645 bytes).
+Output written on 13MCMT01_49_55_ddd.pdf (15 pages, 185785 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
