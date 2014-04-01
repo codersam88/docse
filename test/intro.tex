@@ -1,0 +1,21 @@
+\documentclass{article}
+\begin{document}
+ \section{Introduction}
+ \subsection{System Overview}
+ The Bin-packing VM consolidation algorithm has following modules.
+ \begin{enumerate}
+  \item Parser Module: Takes file name as input from user for parsing that file and calls addPM function in PMmodifier module 
+  to pass the values that have been read.
+  \item User Interface Module: User interface is useful for taking input from  user and giving results to the user. First this module asks user to load an 
+input file and passes it to parser module. After initialization of the PMs and VMs by the PM modifier module it displays a 
+screen with buttons specifying the PMs and labels specifying their respective VMs.\\
+It also has buttons to specify functionalities of the the system such as addVM,deleteVM and consolidate.
+\item PM Modifier Module: This module is responsible for creating physical machines(PM), adding virtual machines(VM) and doing 
+modifications to them. This is also responsible for consolidation operation.
+ \end{enumerate}
+
+
+
+ 
+
+\end{document}
