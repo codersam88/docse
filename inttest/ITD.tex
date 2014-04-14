@@ -1,0 +1,146 @@
+\documentclass[a4paper,10pt]{article}
+\title{High Level Design Document \\ Bin-packing VM Consolidation Algorithm}
+\author{Atchutuni Bhavana 13MCMT01 \\ Surineni Sampath Kumar 13MCMT49 \\ Terli Venkatesh 13MCMT55}
+\date{}
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+\section{Integration Testing}
+\subsection{Test Plan}
+Features to be tested.
+\begin{enumerate}
+ \item Parser funtionality 
+ \item adding VM
+ \item deleting VM
+ \item consolidating functionality 
+ \item switching on PM
+\item switching off PM
+ \end{enumerate}
+\subsection{Test cases}
+\subsubsection{Empty file}
+\begin{tabbing}
+  \hspace*{4cm}\= \kill
+\emph{Purpose}\>: To check if empty file is correctly handeled by the system\\
+\emph{Input}\>: File name\\
+\emph{Expected Output}\>: Empty file error message  \\
+\emph{Pass Criteria}\>: Empty file error message is displayed\\
+\emph{Test Procedure}\>: Click on load button and then choose an empty file\\
+\end{tabbing}
+\subsubsection{Correct file format}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check if correct file format is correctly handeled by the system \\
+ \emph{Input}\>: File name\\
+ \emph{Expected Output}\>: User interface is updated\\
+ \emph{Pass criteria}\>: UI is updated by adding respective number of VMs metioned in the \\ \>input file to PM present.\\
+ \emph{Test Procedure}\>: Click on load button and Select an input file\\
+ \end{tabbing}
+\subsubsection{Incorrect file format}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check if incorrect file format is correctly handled\\ \> by the system \\
+ \emph{Input}\>: File name\\
+ \emph{Expected Output}\>: Incorrect file format error message\\
+ \emph{Pass criteria}\>: Incorrect file format error message is diaplayed\\
+ \emph{Test Procedure}\>: Click on load button and then choose an incorrect file\\
+\end{tabbing}
+\subsubsection{Invalid VM\textunderscore ID or capacity}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check if invalid values for VM\textunderscore ID or capacity are correctly\\ \> handled by the system \\
+ \emph{Input}\>: Invalid VM\textunderscore ID or capacity\\
+ \emph{Expected Output}\>: Invalid VM\textunderscore ID or capacity error message\\
+ \emph{Pass criteria}\>: Invalid VM\textunderscore ID or capacity error message is diaplayed\\
+ \emph{Test Procedure}\>: Click on addVM button and enter invalid values for VM\textunderscore ID or capacity\\
+\end{tabbing}
+\subsubsection{Valid VM\textunderscore ID and capacity}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check valid values for VM\textunderscore ID and capacity are correctly \\ \>handled by the system \\
+ \emph{Input}\>: Valid VM\textunderscore ID or capacity\\
+ \emph{Expected Output}\>: UI is updated\\
+ \emph{Pass criteria}\>: UI is updated by adding the specified VM to the system.\\
+ \emph{Test Procedure}\>: Click on addVM button and enter valid values for VM\textunderscore ID and capacity\\
+\end{tabbing}
+\subsubsection{Sufficient residual capacity}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check adding VM funtionality when sufficient residual \\ \>capacity is available\\
+ \emph{Input}\>: Valid VM\textunderscore ID and capacity\\
+ \emph{Expected Output}\>: UI is updated\\
+ \emph{Pass criteria}\>: UI is updated by adding the specified VM to the system\\
+ \emph{Test Procedure}\>: Click on addVM button and enter valid values for VM\textunderscore ID or capacity\\
+\end{tabbing}
+\subsubsection{Insufficient residual capacity}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check adding VM funtionality when insufficient \\ \>residual capacity is available\\
+ \emph{Input}\>: Valid VM\textunderscore ID and capacity\\
+ \emph{Expected Output}\>: Insufficient capacity error message \\
+ \emph{Pass criteria}\>: Insufficient capacity error message is displayed\\
+ \emph{Test Procedure}\>: Click on addVM button and enter valid values \\ \>for VM\textunderscore ID or capacity\\
+\end{tabbing}
+\subsubsection{Deleting VM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check deleting VM of system\\
+ \emph{Input}\>: Valid VM\textunderscore ID \\
+ \emph{Expected Output}\>: UI is updated\\
+ \emph{Pass criteria}\>: UI is updated by deleting the specified VM to the system\\
+ \emph{Test Procedure}\>: Click on deleteVM button and choose a VM\textunderscore ID \\
+\end{tabbing}
+\subsubsection{Switch off PM}
+\emph{\bf Insufficient capacity to migrate VMs in the PM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check switch off PM funtionality when insufficient residual \\ \>capacity is available for migrating VMs in that PM to other PMs\\
+ \emph{Input}\>: Click event on PM button\\
+ \emph{Expected Output}\>: Cannot switch off PM error message\\
+ \emph{Pass criteria}\>: Cannot switch off PM error message is displayed\\
+ \emph{Test Procedure}\>: Click on PM button \\
+\end{tabbing}
+\subsubsection{switch off PM}
+\emph{\bf Sufficient capacity to migrate VMs in the PM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check switch off PM funtionality when sufficient residual \\ \>capacity is available\\
+ \emph{Input}\>: Click event on PM button\\
+ \emph{Expected Output}\>: UI is updated.The color of switched off PM changes.\\
+ \emph{Pass criteria}\>: UI is updated by switching off specified PM and by migrating the VM \\ \>in PM  to other PMs.\\
+ \emph{Test Procedure}\>: Click on PM button\\
+\end{tabbing}
+\subsubsection{switch on PM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check switch on PM funtionality \\
+\emph{Input}\>: Click event on PM button\\
+ \emph{Expected Output}\>: UI is updated.The color of switched on PM changes.\\
+ \emph{Pass criteria}\>: UI is updated by switching on specified PM\\
+ \emph{Test Procedure}\>: Click on PM button\\
+\end{tabbing}
+\subsubsection{Consolidate}
+\emph{\bf Not capable of emptying a PM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check consolidate funtionality when none of the PM's can be emptied\\
+\emph{Input}\>: Click event on consolidate button\\
+ \emph{Expected Output}\>: No change in the system\\
+ \emph{Pass criteria}\>: UI is updated by switching on specified PM\\
+ \emph{Test Procedure}\>: System will be manually configured so that none of the available PM's \\ \>can be completely emptied and consolidate 
+ button is pressed\\
+\end{tabbing}
+\subsubsection{Consolidate}
+\emph{\bf Capable of emptying a PM}
+\begin{tabbing}
+ \hspace*{4cm}\= \kill
+ \emph{Purpose}\>: To check consolidate funtionality when atleast one of the PM's can be emptied\\
+\emph{Input}\>: Click event on consolidate button\\
+ \emph{Expected Output}\>: Atleast one of the PM will be emptied and it will be turned off\\
+ \emph{Pass criteria}\>: UI is updated by switching on specified PM\\
+ \emph{Test Procedure}\>: System will be manually configured so that atleast one of the PM's \\ \>can be completely emptied and consolidate 
+ button is pressed\\
+\end{tabbing}
+
+\end{document}
